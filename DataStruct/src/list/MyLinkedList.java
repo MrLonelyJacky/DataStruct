@@ -12,7 +12,8 @@ import java.util.LinkedList;
  * MyLinkedList implements MyList，cloneable,Serializable interface
  * @data: date 2020/5/31 23:26
  **/
-public class MyLinkedList<E> implements Collection<E>, Cloneable, Serializable {
+public class MyLinkedList<E> implements MyList<E>, Cloneable, Serializable {
+
 
     /**
      * MyLinkedList support Node
@@ -38,6 +39,26 @@ public class MyLinkedList<E> implements Collection<E>, Cloneable, Serializable {
     }
 
     @Override
+    public E get(int index) {
+        return null;
+    }
+
+    @Override
+    public E set(int index, E e) {
+        return null;
+    }
+
+    @Override
+    public void add(int index, E e) {
+
+    }
+
+    @Override
+    public void remove(int index) {
+
+    }
+
+    @Override
     public int size() {
         return 0;
     }
@@ -48,23 +69,13 @@ public class MyLinkedList<E> implements Collection<E>, Cloneable, Serializable {
     }
 
     @Override
-    public boolean contains(Object o) {
+    public void clear() {
+
+    }
+
+    @Override
+    public boolean contains(E e) {
         return false;
-    }
-
-    @Override
-    public Iterator<E> iterator() {
-        return null;
-    }
-
-    @Override
-    public Object[] toArray() {
-        return new Object[0];
-    }
-
-    @Override
-    public <T> T[] toArray(T[] a) {
-        return null;
     }
 
     @Override
@@ -73,34 +84,12 @@ public class MyLinkedList<E> implements Collection<E>, Cloneable, Serializable {
     }
 
     @Override
-    public boolean remove(Object o) {
+    public boolean remove(E e) {
         return false;
     }
 
     @Override
-    public boolean containsAll(Collection<?> c) {
-        return false;
+    public Iterator<E> iterator() {
+        return null;
     }
-
-    @Override
-    public boolean addAll(Collection<? extends E> c) {
-        return false;
-    }
-
-    @Override
-    public boolean removeAll(Collection<?> c) {
-        return false;
-    }
-
-    @Override
-    public boolean retainAll(Collection<?> c) {
-        return false;
-    }
-
-    @Override
-    public void clear() {
-
-    }
-
-
 }
